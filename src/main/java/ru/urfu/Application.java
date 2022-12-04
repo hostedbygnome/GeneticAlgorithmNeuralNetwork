@@ -1,10 +1,9 @@
-package org.example;
+package ru.urfu;
 
-import org.example.transformation.TransformationImage;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import ru.urfu.network.Network;
+import ru.urfu.transformation.TransformationImage;
+
 
 
 public class Application {
@@ -16,6 +15,10 @@ public class Application {
 
     private static void transformationDataset() {
         TransformationImage transformationImage = new TransformationImage(pathToImages);
-        transformationImage.generateBytesLetters();
+//        transformationImage.generateBytesLetters();
+        Network net = new Network(3, 4, 1, 3);
+        net.setNumberNeuronsHiddenLayers(3);
+        net.initializeWeights();
     }
+
 }

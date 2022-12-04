@@ -1,5 +1,7 @@
-package org.example.network.properties;
+package ru.urfu.network.properties;
 
 public interface ActivationFunction {
-    double outputValue(double totalizerValue);
+    static double calcActivation(double totalizerValue) {
+        return 0;
+    }
 }

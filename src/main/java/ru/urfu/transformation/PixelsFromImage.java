@@ -1,12 +1,16 @@
-package org.example.transformation;
+package ru.urfu.transformation;
+
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class PixelsFromImage implements ConvertImage {
-    private int[][] pixelsArray;
+    int[][] pixelsArray;
 
     @Override
     public void convertImageToPixels(BufferedImage image) {
@@ -28,16 +32,16 @@ public class PixelsFromImage implements ConvertImage {
                 sb.append(pixelsArray[i][j]);
             }
         }
-        if (Files.notExists(outputFile.subpath(0, outputFile.getNameCount() - 1))) {
-            try {
-                Files.createDirectory(outputFile.subpath(0, outputFile.getNameCount() - 1));
-            } catch (IOException e) {
-                System.out.println("Can't create directory " + outputFile.subpath(0, outputFile.getNameCount() - 1));
-            }
-        }
-
         if (Files.notExists(outputFile)) {
             try {
+                if (Files.notExists(outputFile.subpath(0, outputFile.getNameCount() - 4)))
+                    Files.createDirectory(outputFile.subpath(0, outputFile.getNameCount() - 4));
+                if (Files.notExists(outputFile.subpath(0, outputFile.getNameCount() - 3)))
+                    Files.createDirectory(outputFile.subpath(0, outputFile.getNameCount() - 3));
+                if (Files.notExists(outputFile.subpath(0, outputFile.getNameCount() - 2)))
+                    Files.createDirectory(outputFile.subpath(0, outputFile.getNameCount() - 2));
+                if (Files.notExists(outputFile.subpath(0, outputFile.getNameCount() - 1)))
+                    Files.createDirectory(outputFile.subpath(0, outputFile.getNameCount() - 1));
                 Files.writeString(outputFile, sb.toString());
             } catch (IOException e) {
                 System.out.println("Can't write to " + outputFile);

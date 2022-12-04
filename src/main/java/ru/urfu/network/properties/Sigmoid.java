@@ -1,8 +1,7 @@
-package org.example.network.properties;
+package ru.urfu.network.properties;
 
 public class Sigmoid implements ActivationFunction {
-    @Override
-    public double outputValue(double totalizerValue) {
+    public static Double calcActivation(Double totalizerValue) {
         return 1 / (1 + Math.exp(totalizerValue));
     }
 }

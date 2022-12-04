@@ -1,7 +1,6 @@
-package org.example.transformation;
+package ru.urfu.transformation;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.nio.file.Path;
 
 public interface ConvertImage {

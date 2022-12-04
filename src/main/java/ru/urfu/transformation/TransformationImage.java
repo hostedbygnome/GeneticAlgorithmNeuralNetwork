@@ -1,5 +1,7 @@
-package org.example.transformation;
+package ru.urfu.transformation;
 
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
 import org.imgscalr.Scalr;
 
 import javax.imageio.ImageIO;
@@ -7,18 +9,18 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import static org.imgscalr.Scalr.resize;
 
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class TransformationImage {
-    private static int indexFile = 1;
+    static int indexFile = 1;
 
-    private static String lastLetterClass = "";
-    private final int IMG_SIZE = 32;
-    private String pathToBytes = "src/main/resources/bytes/letters";
-    private File baseDir;
+    static String lastLetterClass = "";
+    final int IMG_SIZE = 32;
+    String pathToBytes = "src/main/resources/bytes/letters";
+    File baseDir;
 
     public TransformationImage(String baseDirPath) {
         this.baseDir = new File(baseDirPath);
@@ -48,7 +50,6 @@ public class TransformationImage {
                         try {
                             BufferedImage inputImage = ImageIO.read(new File(path));
                             if (inputImage != null && inputImage.getWidth() != 32) {
-//                                System.out.println(path);
                                 transformImage.convertImageToPixels(resize(inputImage, Scalr.Method.ULTRA_QUALITY, IMG_SIZE, IMG_SIZE));
                                 transformImage.writeBytesFromPixels(
                                         Paths.get(pathToBytes,
