@@ -1,8 +1,6 @@
 package ru.urfu.network;
 
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import ru.urfu.exceptions.BadNumberOfNeurons;
@@ -10,11 +8,11 @@ import ru.urfu.exceptions.InvalidLayersSize;
 import ru.urfu.network.properties.Neuron;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -22,10 +20,10 @@ public class Network {
     final int LAYERS;
     final int INPUT_LAYER_SIZE;
     final int HIDDEN_LAYERS_AMOUNT;
-    final List<Integer> HIDDEN_LAYERS_SIZE = new ArrayList<>(Arrays.asList(64));
+    final List<Integer> HIDDEN_LAYERS_SIZE = new ArrayList<>(List.of(64));
     final int OUTPUT_LAYER_SIZE;
     // LAYER (from the hidden layer) -> CURR NEURON -> PREV NEURON
-    final List<List<Map<Integer, Double>>> WEIGHTS = new ArrayList<>();
+    final List<List<List<Double>>> WEIGHTS = new ArrayList<>();
 
     List<List<Neuron>> NEURONS;
 
@@ -76,16 +74,18 @@ public class Network {
             HIDDEN_LAYERS_SIZE.add(HIDDEN_LAYERS_SIZE.get(HIDDEN_LAYERS_SIZE.size() - 1));
         }
         for (int layer = 0; layer < LAYERS - 1; layer++) {
-            List<Map<Integer, Double>> layerWeights = new ArrayList<>();
+            List<List<Double>> layerWeights = new ArrayList<>();
             final int currLayerSize = layer == LAYERS - 2 ? OUTPUT_LAYER_SIZE : HIDDEN_LAYERS_SIZE.get(layer);
             final int prevLayerSize = layer == 0 ? INPUT_LAYER_SIZE : HIDDEN_LAYERS_SIZE.get(layer - 1);
-            for (int currNeuron = 0; currNeuron <= currLayerSize; currNeuron++) {
-                Map<Integer, Double> neuronWeights = new HashMap<>();
-                for (int prevNeuron = 0; prevNeuron <= prevLayerSize; prevNeuron++) {
-                    neuronWeights.put(prevNeuron, Math.random() * 2 - 1);
+            for (int currNeuronIndex = 0; currNeuronIndex <= currLayerSize; currNeuronIndex++) {
+                List<Double> neuronWeights = new ArrayList<>();
+                for (int prevNeuronIndex = 0; prevNeuronIndex <= prevLayerSize; prevNeuronIndex++) {
+                    neuronWeights.add(Math.random() * 2 - 1);
                 }
-                layerWeights.add(new HashMap<>(neuronWeights));
+                layerWeights.add(new ArrayList<>(neuronWeights));
             }
+            System.out.println("Layer: " + layer);
+            System.out.println(layerWeights);
             WEIGHTS.add(new ArrayList<>(layerWeights));
         }
     }
@@ -104,7 +104,6 @@ public class Network {
     }
 
     public void traverseTestDataset() {
-
     }
 
 }
