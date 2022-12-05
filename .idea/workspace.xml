@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7867115e-b31f-4ac3-a6f5-e77c5fcc7c8f" name="Changes" comment="Added crossing and mutation">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +72,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1670260323" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1670261292" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1670260322" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1670260323" />
                   </RecentBranch>
                 </list>
               </option>
@@ -107,28 +107,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/maksimnovozhilov/Documents/JavaProjects/GeneticAlgorithmNeuralNetwork/src/main/resources/images/letters/test/T",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.39707673",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "bb290c1e6a409f43549b0ae875c5f8af",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maksimnovozhilov/Documents/JavaProjects/GeneticAlgorithmNeuralNetwork/src/main/resources/images/letters/test/T&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39707673&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bb290c1e6a409f43549b0ae875c5f8af&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/T" />
@@ -144,7 +143,7 @@
       <recent name="ru.urfu" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.GeneticAlgorithmNeuralNetwork [buildNeeded]">
     <configuration name="GeneticAlgorithmNeuralNetwork [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -252,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GeneticAlgorithmNeuralNetwork [buildNeeded]" />
         <item itemvalue="Gradle.GeneticAlgorithmNeuralNetwork [testClasses]" />
         <item itemvalue="Gradle.GeneticAlgorithmNeuralNetwork [jar]" />
         <item itemvalue="Gradle.GeneticAlgorithmNeuralNetwork [clean]" />
         <item itemvalue="Gradle.GeneticAlgorithmNeuralNetwork [classes]" />
-        <item itemvalue="Gradle.GeneticAlgorithmNeuralNetwork [buildNeeded]" />
       </list>
     </recent_temporary>
   </component>
@@ -270,23 +269,8 @@
       <updated>1670001856106</updated>
       <workItem from="1670001864650" duration="19731000" />
       <workItem from="1670237090797" duration="288000" />
-      <workItem from="1670237548814" duration="6752000" />
+      <workItem from="1670237548814" duration="6443000" />
     </task>
-    <task id="LOCAL-00001" summary="Added crossing and mutation">
-      <created>1670260791262</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1670260791262</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added crossing and mutation">
-      <created>1670260820342</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1670260820342</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +287,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
