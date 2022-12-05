@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7867115e-b31f-4ac3-a6f5-e77c5fcc7c8f" name="Changes" comment="Added crossing and mutation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/Training.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/network/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/Network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +110,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -274,8 +270,23 @@
       <updated>1670001856106</updated>
       <workItem from="1670001864650" duration="19731000" />
       <workItem from="1670237090797" duration="288000" />
-      <workItem from="1670237548814" duration="6443000" />
+      <workItem from="1670237548814" duration="6752000" />
     </task>
+    <task id="LOCAL-00001" summary="Added crossing and mutation">
+      <created>1670260791262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670260791262</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added crossing and mutation">
+      <created>1670260820342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670260820342</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
