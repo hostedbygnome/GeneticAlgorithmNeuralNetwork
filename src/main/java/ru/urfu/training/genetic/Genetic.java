@@ -26,21 +26,24 @@ public class Genetic {
                             secondParentWeights.get(layer).get(currNeuronIndex).get(prevNeuronIndex) * (1 - rate));
                 }
                 layerWeights.add(new ArrayList<>(neuronWeights));
+                neuronWeights.clear();
             }
-            System.out.println("Layer: " + layer);
-            System.out.println(layerWeights);
             afterCrossingWeights.add(new ArrayList<>(layerWeights));
+            layerWeights.clear();
         }
         return afterCrossingWeights;
     }
 
     public static List<List<List<Double>>> mutation(List<List<List<Double>>> weights) {
+        int layer = (int) (Math.random() * weights.size() - 1);
+        int currNeuronIndex = (int) (Math.random() * (weights.get(layer).size() - 2));
+        int prevNeuronIndex = (int) (Math.random() * (weights.get(layer).get(currNeuronIndex).size() - 2));
         List<List<List<Double>>> afterMutationWeights = new ArrayList<>(weights);
-        int layer = (int) (Math.random() * weights.size());
-        int currNeuronIndex = (int) (Math.random() * (weights.get(layer).size() - 1));
-        int prevNeuronIndex = (int) (Math.random() * (weights.get(layer).get(currNeuronIndex).size() - 1));
-        afterMutationWeights.get(layer).get(currNeuronIndex).set(prevNeuronIndex, Math.random() * 2 - 1);
-        System.out.println(afterMutationWeights);
+        List<List<Double>> layerWeights = new ArrayList<>(weights.get(layer));
+        List<Double> currNeuronWeights = new ArrayList<>(weights.get(layer).get(currNeuronIndex));
+        currNeuronWeights.set(prevNeuronIndex, Math.random() * 2 - 1);
+        layerWeights.set(currNeuronIndex, currNeuronWeights);
+        afterMutationWeights.set(layer, layerWeights);
         return afterMutationWeights;
     }
 }

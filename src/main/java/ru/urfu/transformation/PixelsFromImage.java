@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class PixelsFromImage implements ConvertImage {
@@ -19,7 +20,7 @@ public class PixelsFromImage implements ConvertImage {
             for (int j = 0; j < pixelsArray[i].length; j++) {
                 int pixel = image.getRGB(j, i);
                 int a = (pixel >> 24) & 0xFF;
-                pixelsArray[i][j] = a > 0 ? 1 : 0;
+                pixelsArray[i][j] = a;
             }
         }
     }
@@ -30,6 +31,7 @@ public class PixelsFromImage implements ConvertImage {
         for (int i = 0; i < pixelsArray.length; i++) {
             for (int j = 0; j < pixelsArray[i].length; j++) {
                 sb.append(pixelsArray[i][j]);
+                sb.append("\n");
             }
         }
         if (Files.notExists(outputFile)) {

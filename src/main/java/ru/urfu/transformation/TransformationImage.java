@@ -18,7 +18,7 @@ public class TransformationImage {
     static int indexFile = 1;
 
     static String lastLetterClass = "";
-    final int IMG_SIZE = 32;
+    final int IMG_SIZE = 16;
     String pathToBytes = "src/main/resources/bytes/letters";
     File baseDir;
 
@@ -49,8 +49,8 @@ public class TransformationImage {
                         PixelsFromImage transformImage = new PixelsFromImage();
                         try {
                             BufferedImage inputImage = ImageIO.read(new File(path));
-                            if (inputImage != null && inputImage.getWidth() != 32) {
-                                transformImage.convertImageToPixels(resize(inputImage, Scalr.Method.ULTRA_QUALITY, IMG_SIZE, IMG_SIZE));
+                            if (inputImage != null && inputImage.getWidth() == 16) {
+                                transformImage.convertImageToPixels(inputImage);
                                 transformImage.writeBytesFromPixels(
                                         Paths.get(pathToBytes,
                                                 purposeImage,
