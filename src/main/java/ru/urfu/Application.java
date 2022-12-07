@@ -1,12 +1,12 @@
 package ru.urfu;
 
 
-import ru.urfu.training.genetic.GeneticTraining;
+import ru.urfu.training.genetic.ThreadsGenetic;
 import ru.urfu.transformation.TransformationImage;
 
 
 public class Application {
-    private static String pathToImages = "src/main/resources/images/letters";
+    private final static String pathToImages = "src/main/resources/images/letters";
 
     public static void main(String[] args) {
         transformationDataset();
@@ -14,8 +14,9 @@ public class Application {
 
     private static void transformationDataset() {
         TransformationImage transformationImage = new TransformationImage(pathToImages);
-        transformationImage.generateBytesLetters();
-        GeneticTraining training = new GeneticTraining(200, 300, 50);
-        training.training();
+//        transformationImage.generateBytesLetters();
+        ThreadsGenetic threads = new ThreadsGenetic(4);
+        threads.threadsTraining();
+        threads.threadsTesting();
     }
 }

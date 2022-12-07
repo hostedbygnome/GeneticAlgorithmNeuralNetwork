@@ -1,49 +1,72 @@
 package ru.urfu.training.genetic;
 
-import ru.urfu.exceptions.InvalidLayersSize;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import ru.urfu.network.Network;
+import ru.urfu.network.properties.Dataset;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
+@RequiredArgsConstructor
 public class Genetic {
-    public static List<List<List<Double>>> crossing(List<List<List<Double>>> firstParentWeights,
-                                                    List<List<List<Double>>> secondParentWeights) {
-        if (firstParentWeights.size() != secondParentWeights.size()) {
-            throw new InvalidLayersSize("First parent weights must be the same size as second parent weights");
-        }
-        double rate = Math.random();
-        final List<List<List<Double>>> afterCrossingWeights = new ArrayList<>();
-        // (from the hidden layer)
-        final int layers = firstParentWeights.size();
-        for (int layer = 0; layer < layers; layer++) {
-            List<List<Double>> layerWeights = new ArrayList<>();
-            final int currLayerSize = firstParentWeights.get(layer).size();
-            for (int currNeuronIndex = 0; currNeuronIndex < currLayerSize; currNeuronIndex++) {
-                List<Double> neuronWeights = new ArrayList<>();
-                final int prevLayerSize = firstParentWeights.get(layer).get(currNeuronIndex).size();
-                for (int prevNeuronIndex = 0; prevNeuronIndex < prevLayerSize; prevNeuronIndex++) {
-                    neuronWeights.add(firstParentWeights.get(layer).get(currNeuronIndex).get(prevNeuronIndex) * rate +
-                            secondParentWeights.get(layer).get(currNeuronIndex).get(prevNeuronIndex) * (1 - rate));
+    @NonNull
+    private final Integer MEMBERS_SIZE;
+    @NonNull
+    private final Integer GENERATIONS;
+    private List<Network> MEMBERS = new ArrayList<>();
+    @NonNull
+    private final Integer CHAMPIONS_SIZE;
+
+    public Network training() {
+        for (int generation = 0; generation < GENERATIONS; generation++) {
+            if (generation == 0) {
+                for (int member = 0; member < MEMBERS_SIZE; member++) {
+                    Network network = new Network(3, 1, Dataset.TRAIN);
+                    network.setNumberNeuronsHiddenLayers(64);
+                    network.traverseDataset();
+                    MEMBERS.add(network);
                 }
-                layerWeights.add(new ArrayList<>(neuronWeights));
-                neuronWeights.clear();
             }
-            afterCrossingWeights.add(new ArrayList<>(layerWeights));
-            layerWeights.clear();
+            MEMBERS.sort(Comparator.comparingDouble(Network::getERROR));
+            MEMBERS = new ArrayList<>(MEMBERS.subList(0, CHAMPIONS_SIZE));
+            System.out.println("Thread: " +
+                    Thread.currentThread().getName() +
+                    " Generation: " + (generation + 1) +
+                    " Error: " + String.format("%.3f", MEMBERS.get(0).getERROR()));
+            if (generation == GENERATIONS - 1) return MEMBERS.get(0);
+            while (MEMBERS.size() < MEMBERS_SIZE) {
+                double geneticMethod = Math.random();
+                int firstParentIndex = (int) (Math.random() * (MEMBERS.size() - 1));
+                List<List<List<Double>>> weights;
+                // Crossing
+                if (geneticMethod - 0.5 >= 0) {
+                    int secondParentIndex = (int) (Math.random() * (MEMBERS.size() - 1));
+                    while (firstParentIndex == secondParentIndex) {
+                        secondParentIndex = (int) (Math.random() * (MEMBERS.size() - 1));
+                    }
+                    weights = GeneticReproduction.crossing(MEMBERS.get(firstParentIndex).getWEIGHTS(),
+                            MEMBERS.get(secondParentIndex).getWEIGHTS());
+                }
+
+                // Mutation
+                else {
+                    weights = GeneticReproduction.mutation(MEMBERS.get(firstParentIndex).getWEIGHTS());
+                }
+                Network childMember = new Network(3, 1, Dataset.TRAIN);
+                childMember.setNumberNeuronsHiddenLayers(64);
+                childMember.setWEIGHTS(weights);
+                childMember.traverseDataset();
+                MEMBERS.add(childMember);
+            }
         }
-        return afterCrossingWeights;
+        return null;
     }
 
-    public static List<List<List<Double>>> mutation(List<List<List<Double>>> weights) {
-        int layer = (int) (Math.random() * weights.size() - 1);
-        int currNeuronIndex = (int) (Math.random() * (weights.get(layer).size() - 2));
-        int prevNeuronIndex = (int) (Math.random() * (weights.get(layer).get(currNeuronIndex).size() - 2));
-        List<List<List<Double>>> afterMutationWeights = new ArrayList<>(weights);
-        List<List<Double>> layerWeights = new ArrayList<>(weights.get(layer));
-        List<Double> currNeuronWeights = new ArrayList<>(weights.get(layer).get(currNeuronIndex));
-        currNeuronWeights.set(prevNeuronIndex, Math.random() * 2 - 1);
-        layerWeights.set(currNeuronIndex, currNeuronWeights);
-        afterMutationWeights.set(layer, layerWeights);
-        return afterMutationWeights;
+    public static void testing(Network network) {
+        network.setDatasetType(Dataset.TEST);
+        network.traverseDataset();
+        System.out.println("Correct answers: " + network.getPERCENTAGE_CORRECT_ANSWERS());
     }
 }

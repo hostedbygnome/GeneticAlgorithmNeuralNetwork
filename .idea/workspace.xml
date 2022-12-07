@@ -4,421 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7867115e-b31f-4ac3-a6f5-e77c5fcc7c8f" name="Changes" comment="Added crossing and mutation">
-      <change afterPath="$PROJECT_DIR$/.idea/fastRequestCollection.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Dataset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/IdealAnswers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/GeneticTraining.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/L/9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/X/9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 10A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 11A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 12A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 13A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 14A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 15A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 1A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 2A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 3A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 4A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 5A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 6A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 7A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 8A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/Frame 9A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 16B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 17B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 18B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 19B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 20B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 21B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 22B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 23B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 24B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 25B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 26B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 27B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 28B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 29B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/Frame 30B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 31H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 32H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 33H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 34H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 35H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 36H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 37H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 38H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 39H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 40H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 41H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 42H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 43H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 44H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/Frame 45H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 61L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 62L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 63L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 64L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 65L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 66L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 67L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 68L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 69L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 70L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 71L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 72L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 73L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 74L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/L/Frame 75L.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 46X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 47X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 48X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 49X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 50X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 51X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 52X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 53X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 54X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 55X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 56X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 57X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 58X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 59X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/train/X/Frame 60X.png" afterDir="false" />
+    <list default="true" id="7867115e-b31f-4ac3-a6f5-e77c5fcc7c8f" name="Changes" comment="Change dataset and fully worked network and training">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/GeneticReproduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/ThreadsGenetic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/L/7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/X/7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 76A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 81A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 82A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 83A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 84A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 85A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/Frame 86A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 87B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 88B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 89B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 90B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 91B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 92B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/Frame 93B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 100H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 94H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 95H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 96H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 97H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 98H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/Frame 99H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 108L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 109L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 110L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 111L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 112L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 113L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/L/Frame 114L.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 101X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 102X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 103X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 104X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 105X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 106X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letters/test/X/Frame 107X.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/network/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Neuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Neuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Sigmoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Sigmoid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/transformation/PixelsFromImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/transformation/PixelsFromImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/transformation/TransformationImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/transformation/TransformationImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/A/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/B/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/H/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/S/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/test/T/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/10" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/11" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/12" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/13" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/14" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/14" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/15" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/15" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/7" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/8" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/A/9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/10" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/11" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/12" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/13" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/14" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/14" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/15" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/15" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/7" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/8" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/B/9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/10" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/11" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/12" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/13" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/14" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/14" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/15" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/15" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/7" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/8" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/H/9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/S/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bytes/letters/train/T/9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58bc5262774f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58bc7867790c8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8cc76a156.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8ce425c83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8df113c4d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8dff7145c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8e3599565.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8e4797349.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8e98308fe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be8e9e53976.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be9a69e3363.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/A/58be9ac17b9fd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bbc399859a2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc3a5e4b893.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc3b149d7dd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc405c34277.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc40ca2d394.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc4da711c54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc4ef3c46e0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc517a804f5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc51c8dfdab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc6a3da76ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc78c7a1ffd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/B/58bc78d8384ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be81b5bc285.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be82d6f316a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be82dba7860.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be86bb041e1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93c432591.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93d522783.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93d6c3259.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93d87b86e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93db7b943.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93e6e20cd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be93ea51213.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/H/58be98a160af6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58becb29031ad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58becd5d0cd42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed1d4eb73a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed2531a8ba.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed28d6fb30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed3512c2ac.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed8e047106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed904eba33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bed9ef3073d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/S/58bedd8b80bb3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bf11158360f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bf127964a1f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bf14881022c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bf154075a65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bf186378e43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bf2893598c4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bfa3126c480.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bfa318e04f0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bfa32436db3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bfa93404bd8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bfa985a5ecc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/test/T/58bfab5bd2ec8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/58a9cea0bee57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/58a9cec8ab77a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/58a9cecf7f55b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a0d5cfd92c94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a1cf8f3ee8a8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a21d7ad4516e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a2e6ac832420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a2f3c19c27bb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a31efd4bbcdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a31f00a78486.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a391101bfece.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a3911b95f3e4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a3ac3280d8b4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a5574665788e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a570cf785316.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a6735076d36f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a864732d7ba0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/A/5a97d81466439.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/58aa0c29a6cf5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/58aa0c3aa9a16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a0b0a268a779.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a0d5cce6fbdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a1cf720e8a86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a1cf749b958e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a21d6e1dcfb1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a21d74dcbba3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a21db2ccfefd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a2eef0812aaf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a2eef0ca3a7e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a31f02503681.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a31f08c017b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a31f0b253272.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a31f0d73d27f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a39117fd49c8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a67351a743e3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/B/5a67351e881fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/58a9ceae7a5aa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/58a9ceba2bd72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/58a9cebc7c02e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a0d5bac97d6d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a0d5c73af9d8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a0d5cd3a5b82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a1cf7abadd9a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a1cf83c5b823.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a21d7e5370f6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a21db28a4eee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a21db5aaa813.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a2e6ac0cde8d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a31f00fe6920.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a31f05e5f91c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a31f06e16df9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a31f1048bebe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a8bc6eb6b940.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/H/5a8c65097d41a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/58ac47a633d7e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/58ac47b7b1640.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0b0a0eb7c3f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0b0a20a26ad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0d5b2434d98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0d5bb35bec2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0d5c02a6476.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0d5c0e52417.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a0d5ca2141ec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a1cf8fb6c62a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a21daf461400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a21db5feb495.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a2e6ac41c08f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a31f088a2b45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a31f0cf7ecec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a39111fb4eac.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a67352663092.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/S/5a8c650d18ba5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/58ac470a6ff8f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/58ac4729bae80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/58ac47c81ee9b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/58b1d0aa61ea1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/58b1d0b698c20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/58b1d0f7e39d1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a00399befe41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a0d5bc9139a9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a0d5c6cafae0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a0d5ca758ca0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a21d6d299790.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a21d74496025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a21d7da1c926.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a21d7e1819a2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a2eeefbe2057.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a31efed3a8f6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a673545512ed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letters/train/T/5a8bc6c6244de.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/GeneticTraining.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -529,7 +192,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/maksimnovozhilov/IdeaProjects/GeneticAlgorithmNeuralNetwork/src/main/resources/images/letters/train/X",
+    "last_opened_file_path": "/Users/maksimnovozhilov/IdeaProjects/GeneticAlgorithmNeuralNetwork/src/main/resources/images/letters/test/X",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -545,11 +208,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/train/X" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/train/L" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/train/H" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/train/B" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/train/A" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/X" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/L" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/H" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/B" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/A" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
@@ -713,8 +376,17 @@
       <workItem from="1670237090797" duration="288000" />
       <workItem from="1670237548814" duration="6443000" />
       <workItem from="1670317411535" duration="24621000" />
-      <workItem from="1670343232352" duration="12850000" />
+      <workItem from="1670343232352" duration="12922000" />
+      <workItem from="1670429214483" duration="7221000" />
     </task>
+    <task id="LOCAL-00001" summary="Change dataset and fully worked network and training">
+      <created>1670360680594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670360680594</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -746,7 +418,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added crossing and mutation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added crossing and mutation" />
+    <MESSAGE value="Change dataset and fully worked network and training" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change dataset and fully worked network and training" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -24,7 +24,7 @@ import static ru.urfu.network.properties.IdealAnswers.*;
 
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@ToString(of = "ERROR")
+@ToString(of = {"PERCENTAGE_CORRECT_ANSWERS", "ERROR"})
 public class Network {
     final int LAYERS;
     int INPUT_LAYER_SIZE;
@@ -38,7 +38,11 @@ public class Network {
     final List<List<Neuron>> NEURONS = new ArrayList<>();
 
     double ERROR;
+    double CORRECT_ANSWERS;
 
+    double LETTERS_AMOUNT;
+
+    double PERCENTAGE_CORRECT_ANSWERS;
     final String TRAIN_DATASET_DIRECTORY;
     final String TEST_DATASET_DIRECTORY;
     @Setter
@@ -82,6 +86,12 @@ public class Network {
         Path rootDir = datasetType == Dataset.TRAIN ? Path.of(TRAIN_DATASET_DIRECTORY)
                 : datasetType == Dataset.TEST ? Path.of(TEST_DATASET_DIRECTORY)
                 : Path.of("");
+        if (datasetType == Dataset.TEST) {
+            ERROR = 0;
+            CORRECT_ANSWERS = 0;
+            LETTERS_AMOUNT = 0;
+            PERCENTAGE_CORRECT_ANSWERS = 0;
+        }
         if (Files.notExists(rootDir)) {
             try {
                 throw new FileNotFoundException();
@@ -110,15 +120,8 @@ public class Network {
             for (File letter : letters) {
                 if (letter.isDirectory()) traverseLetters(letter);
                 else {
-                    switch (letter.getPath().replaceAll("[^A-Z]", "")) {
-                        case "A" -> answer = A.getAnswer();
-                        case "B" -> answer = B.getAnswer();
-                        case "H" -> answer = H.getAnswer();
-                        case "L" -> answer = L.getAnswer();
-                        case "X" -> answer = X.getAnswer();
-                        default -> throw new IllegalArgumentException("Illegal letter: " +
-                                letter.getPath().replaceAll("[^A-Z]", ""));
-                    }
+                    getCurrentAnswer(letter.getPath().replaceAll("[^A-Z]", ""));
+                    NEURONS.clear();
                     List<Neuron> inputLayerNeurons = new ArrayList<>();
                     List<String> values = new ArrayList<>();
                     try {
@@ -142,8 +145,18 @@ public class Network {
                     if (WEIGHTS.size() != LAYERS - 1) initializeWeights();
                     generateNeurons();
                 }
-                NEURONS.clear();
             }
+        }
+    }
+
+    private void getCurrentAnswer(String letter) {
+        switch (letter) {
+            case "A" -> answer = A.getAnswer();
+            case "B" -> answer = B.getAnswer();
+            case "H" -> answer = H.getAnswer();
+            case "L" -> answer = L.getAnswer();
+            case "X" -> answer = X.getAnswer();
+            default -> throw new IllegalArgumentException("Illegal letter: " + letter);
         }
     }
 
@@ -185,8 +198,20 @@ public class Network {
             NEURONS.add(new ArrayList<>(layerNeurons));
             layerNeurons.clear();
         }
+        int currentAnswer = 0;
+        double highestOutput = 0;
         for (int outputNeuron = 0; outputNeuron < OUTPUT_LAYER_SIZE; outputNeuron++) {
-            ERROR += Math.pow((answer.get(outputNeuron) - NEURONS.get(LAYERS - 1).get(outputNeuron).getOutputValue()), 2);
+            double currOutputValue = NEURONS.get(LAYERS - 1).get(outputNeuron).getOutputValue();
+            if (highestOutput < currOutputValue) {
+                highestOutput = currOutputValue;
+                currentAnswer = outputNeuron;
+            }
+            ERROR += Math.pow((answer.get(outputNeuron) - currOutputValue), 2);
         }
+        LETTERS_AMOUNT++;
+        if (answer.get(currentAnswer) == 1) {
+            CORRECT_ANSWERS++;
+        }
+        PERCENTAGE_CORRECT_ANSWERS = CORRECT_ANSWERS / LETTERS_AMOUNT * 100;
     }
 }
