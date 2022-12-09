@@ -1,7 +1,7 @@
 package ru.urfu;
 
 
-import ru.urfu.training.genetic.ThreadsGenetic;
+import ru.urfu.genetic.ThreadsGenetic;
 import ru.urfu.transformation.TransformationImage;
 
 
@@ -15,7 +15,7 @@ public class Application {
     private static void transformationDataset() {
         TransformationImage transformationImage = new TransformationImage(pathToImages);
 //        transformationImage.generateBytesLetters();
-        ThreadsGenetic threads = new ThreadsGenetic(4);
+        ThreadsGenetic threads = new ThreadsGenetic(1);
         threads.threadsTraining();
         threads.threadsTesting();
     }

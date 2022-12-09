@@ -1,4 +1,4 @@
-package ru.urfu.training.genetic;
+package ru.urfu.genetic;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;

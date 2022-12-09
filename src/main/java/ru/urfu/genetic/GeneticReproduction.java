@@ -1,4 +1,4 @@
-package ru.urfu.training.genetic;
+package ru.urfu.genetic;
 
 import ru.urfu.exceptions.InvalidLayersSize;
 

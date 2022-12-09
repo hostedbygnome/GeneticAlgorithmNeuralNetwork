@@ -1,4 +1,4 @@
-package ru.urfu.training.genetic;
+package ru.urfu.genetic;
 
 import lombok.AllArgsConstructor;
 import ru.urfu.network.Network;
@@ -17,21 +17,23 @@ public class ThreadsGenetic {
         if (THREADS_COUNT > Runtime.getRuntime().availableProcessors()) {
             throw new IllegalArgumentException("Threads count can't be greater than available processors");
         }
-        ExecutorService executor = Executors.newFixedThreadPool(THREADS_COUNT);
-        List<Callable<Network>> tasks = new ArrayList<>();
-        for (int i = 0; i < THREADS_COUNT; i++) {
-            tasks.add(() -> {
-                Genetic genetic = new Genetic(100, 300, 30);
-                return genetic.training();
-            });
-        }
-        List<Future<Network>> futures = new ArrayList<>();
-        try {
-            futures = executor.invokeAll(tasks);
-        } catch (InterruptedException e) {
-            System.out.println("Some problems occurred while waiting for tasks to complete " + e.getMessage());
-        } finally {
-            executor.shutdown();
+        List<Future<Network>> futures;
+        try (ExecutorService executor = Executors.newFixedThreadPool(THREADS_COUNT)) {
+            List<Callable<Network>> tasks = new ArrayList<>();
+            for (int i = 0; i < THREADS_COUNT; i++) {
+                tasks.add(() -> {
+                    Genetic genetic = new Genetic(100, 300, 30);
+                    return genetic.training();
+                });
+            }
+            futures = new ArrayList<>();
+            try {
+                futures = executor.invokeAll(tasks);
+            } catch (InterruptedException e) {
+                System.out.println("Some problems occurred while waiting for tasks to complete " + e.getMessage());
+            } finally {
+                executor.shutdown();
+            }
         }
         if (futures.size() == THREADS_COUNT) {
             for (Future<Network> future : futures) {
@@ -42,13 +44,15 @@ public class ThreadsGenetic {
                 }
             }
         }
+        if (CHAMPIONS.size() > 1) {
+            CHAMPIONS.sort(Comparator.comparingDouble(Network::getERROR));
+        }
         CHAMPIONS.stream()
                 .forEach(System.out::println);
     }
 
     public void threadsTesting() {
         System.out.println("TESTING");
-        CHAMPIONS.sort(Comparator.comparingDouble(Network::getERROR));
         Genetic.testing(CHAMPIONS.get(0));
     }
 

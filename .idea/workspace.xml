@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7867115e-b31f-4ac3-a6f5-e77c5fcc7c8f" name="Changes" comment="Added parallelization and passing through the test set">
+    <list default="true" id="7867115e-b31f-4ac3-a6f5-e77c5fcc7c8f" name="Changes" comment="Little updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Sigmoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/properties/Sigmoid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/Training.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/network/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/network/Network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/Genetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/genetic/Genetic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/GeneticReproduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/genetic/GeneticReproduction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/urfu/training/genetic/ThreadsGenetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/urfu/genetic/ThreadsGenetic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +35,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="GeneticAlgorithmNeuralNetwork" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GeneticAlgorithmNeuralNetwork" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -111,27 +110,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/maksimnovozhilov/IdeaProjects/GeneticAlgorithmNeuralNetwork/src/main/resources/images/letters/test/X",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.39707673",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "bb290c1e6a409f43549b0ae875c5f8af",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maksimnovozhilov/IdeaProjects/GeneticAlgorithmNeuralNetwork/src/main/resources/images/letters/test/X&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39707673&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalDependencies&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bb290c1e6a409f43549b0ae875c5f8af&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/images/letters/test/X" />
@@ -147,7 +146,7 @@
       <recent name="ru.urfu" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.GeneticAlgorithmNeuralNetwork">
     <configuration name="GeneticAlgorithmNeuralNetwork [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -174,7 +173,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -265,7 +264,7 @@
         <option name="taskNames">
           <list />
         </option>
-        <option name="vmOptions" value="-Xmx1024m -Xms256m" />
+        <option name="vmOptions" value="" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
@@ -303,7 +302,14 @@
       <workItem from="1670237548814" duration="6443000" />
       <workItem from="1670317411535" duration="24621000" />
       <workItem from="1670343232352" duration="12922000" />
-      <workItem from="1670429214483" duration="7414000" />
+      <workItem from="1670429214483" duration="7460000" />
+      <workItem from="1670491119140" duration="617000" />
+      <workItem from="1670529819872" duration="18000" />
+      <workItem from="1670530915833" duration="3382000" />
+      <workItem from="1670534322074" duration="3818000" />
+      <workItem from="1670558245114" duration="606000" />
+      <workItem from="1670562664185" duration="453000" />
+      <workItem from="1670565280682" duration="1202000" />
     </task>
     <task id="LOCAL-00001" summary="Change dataset and fully worked network and training">
       <created>1670360680594</created>
@@ -319,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670439597815</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Little updates">
+      <created>1670439740761</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670439740761</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +366,8 @@
     <MESSAGE value="Added crossing and mutation" />
     <MESSAGE value="Change dataset and fully worked network and training" />
     <MESSAGE value="Added parallelization and passing through the test set" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parallelization and passing through the test set" />
+    <MESSAGE value="Little updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little updates" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
